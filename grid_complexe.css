@@ -1,0 +1,281 @@
+/* même chose en condensé 
+
+	grid-column-start:1;
+	grid-column-end:3;
+	grid-row-start:6;
+	grid-row-end:7;
+
+	ou
+
+	grid-column:1/3;
+	grid-row:6/7;
+
+	ou
+
+	grid-area:6/1/7/6;
+
+
+*/
+
+
+
+body,html{
+	height: 100vh;
+}
+
+
+.cadre{
+
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 1fr 2fr 1fr 3fr 1fr 3fr 2fr 2fr 1fr 1fr; /* j'ai coupé en 13 columns */
+	grid-template-rows: 1fr 2fr 4fr 2fr 3fr 1fr 1fr; /* j'ai coupé en 7 rows */
+	border: solid 5px black;
+	height: 95%;
+}
+
+.case{
+	border: solid 5px black;	
+}
+
+.noir{
+	background-color: black;
+}
+
+.bleu{
+	background-color: darkblue;
+}
+
+
+.jaune{
+	background-color: yellow;
+}
+
+.rouge{
+	background-color: red;
+}
+
+
+.blanc{
+	background-color: white;
+}
+
+/******************************
+	
+		cases NOIRES
+
+******************************/
+
+#noir1{
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start:3;
+	grid-row-end:5;
+}
+
+#noir2{
+	grid-area:3/3/7/4;	
+}
+
+#noir3{
+	grid-area:6/7/8/10;	
+}
+
+#noir4{
+	grid-area:4/12/5/14;	
+}
+
+/******************************
+	
+		cases BLEUES
+
+******************************/
+
+#bleu1{
+	grid-column:2/7;
+	grid-row:2/3;
+}
+
+#bleu2{
+	grid-area:4/7/5/9;	
+}
+
+#bleu3{
+	grid-area:2/9/3/12;	
+}
+
+#bleu4{
+	grid-area:5/10/6/11;	
+}
+
+/******************************
+	
+		cases JAUNES
+
+******************************/
+
+
+#jaune1{
+	grid-area:4/4/5/5;	
+}
+
+#jaune2{
+	grid-area:5/4/8/5;	
+}
+
+#jaune3{
+	grid-area:3/7/4/9;	
+}
+
+#jaune4{
+	grid-area:5/11/6/12;	
+}
+
+#jaune5{
+	grid-area:1/13/4/14;	
+}
+
+/******************************
+	
+		cases ROUGES
+
+******************************/
+
+#rouge1{
+	grid-area:5/2/7/3;	
+}
+
+#rouge2{
+	grid-area:4/5/5/7;	
+}
+
+#rouge3{
+	grid-area:6/5/8/7;	
+}
+
+#rouge4{
+	grid-area:3/9/4/11;	
+}
+
+#rouge5{
+	grid-area:3/11/4/12;	
+}
+
+
+
+
+/******************************
+	
+		cases BLANCS
+
+******************************/
+
+#blanc1{
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start:1;
+	grid-row-end:3;
+}
+
+/* utilisation de grid_area 
+#blanc1{
+	grid-area: w1;
+}
+*/
+
+#blanc2
+{
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start:5;
+	grid-row-end:7;
+}
+
+#blanc3
+{
+	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start:7;
+	grid-row-end:8;
+}
+
+#blanc4
+{
+	grid-column:2/7;
+	grid-row:1/2;
+}
+
+#blanc5
+{
+	grid-area:3/2/5/3;
+}
+
+#blanc6
+{
+	grid-area:3/4/4/6;
+}
+
+
+#blanc7
+{
+	grid-area:3/6/4/7;
+}
+
+#blanc8
+{
+	grid-area:5/5/6/8;
+}
+
+#blanc9
+{
+	grid-area:5/8/6/10;
+}
+
+#blancA
+{
+	grid-area:1/7/2/12;
+}
+
+#blancB
+{
+	grid-area:2/7/3/9;
+}
+
+#blancC
+{
+	grid-area:4/9/5/11;
+}
+
+#blancD
+{
+	grid-area:4/11/5/12;
+}
+
+#blancE
+{
+	grid-area:5/12/6/14;
+}
+
+#blancF
+{
+	grid-area:6/10/8/14;
+}
+
+#blancG
+{
+	grid-area:1/12/4/13;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

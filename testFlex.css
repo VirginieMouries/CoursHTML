@@ -1,0 +1,91 @@
+/*
+testFlex.css
+*/
+
+
+body{
+	padding: 0;
+	margin:0;
+}
+
+.wrapper{
+	/* flex pour la page: afficher en lignes */
+	display: flex;
+	flex-direction: column;	
+	height: 100vh; /* pour que ca prenne tout l'écran en hauteur*/
+
+}
+
+.header{
+	background-color: tomato; 
+	text-align: center;	
+	flex: 1;
+}
+
+ul{
+	padding-left: 0px;
+	list-style: none;
+}
+
+li{
+	padding: 10px;
+	border: 1px solid lightblue;
+
+}
+
+
+nav ul li{
+	flex:1;
+}
+
+.navlink a{
+	text-decoration: none;
+}
+
+.links{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+
+}
+
+.aside{
+	padding:5px;
+}
+
+.aside-1{
+	background-color: yellow; 
+	flex:1;
+}
+
+.main-wrapper{
+	display: flex;
+	flex-direction: row;	
+	flex:5;
+	
+}
+
+.main{
+	display: flex;
+	padding:10px;
+	flex:3;
+	background-color: deepskyblue;
+	flex-wrap: wrap; /* pour que les colonnes se réarangent quand il n'y a plus de place*/
+
+}
+.aside-2{
+	background-color: pink; 
+	flex: 1;
+}
+
+.col{
+	margin: 5px;
+	flex:1;
+	flex-basis: 300px; /* de cette facon si il n'y a plus assez de place on passera à laligne */
+}
+
+.footer{
+	background-color: green;
+	flex:1;
+}

@@ -1,0 +1,105 @@
+
+
+
+div{
+	
+	/* width: 40px;
+	height: 40px; */
+	padding: 20px;
+	border: solid 2px black;
+}
+
+.container
+{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border: solid 2px black;
+
+}
+
+.topleft
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	border: solid 2px black; 
+}
+
+.topright
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: green;
+	border: solid 2px black; 
+}
+
+
+.bottomleft
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: red; 
+	border: solid 2px black;
+}
+
+.bottomright
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: grey; 
+	border: solid 2px black;
+	
+}
+
+.container2
+{
+	position: relative;
+	top:150px;
+	height: 50px;
+	width: 50px;
+	border: solid 5px red;
+
+}
+
+.topleft2
+{
+	position: relative;
+	top: -25px;
+	left: -25px;
+
+	border: solid 2px black; 
+}
+
+.topright2
+{
+	position: relative;
+	top: -65px;
+	right: -25px;
+	background-color: green;
+	border: solid 2px black; 
+}
+
+
+.bottomleft2
+{
+	position: relative;
+	bottom: 65px;
+	left: -25px;
+	background-color: red; 
+	border: solid 2px black;
+}
+
+.bottomright2
+{
+	position: relative;
+	bottom:105px;
+	right:-25px;
+	background-color: grey; 
+	border: solid 2px black;
+	
+}
