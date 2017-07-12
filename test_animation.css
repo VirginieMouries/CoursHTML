@@ -92,6 +92,7 @@
 
 ******************************/
 
+/*
 @keyframes bouge_bille{
 	0%{
 		transform: translateY(0px);
@@ -116,14 +117,39 @@
 	}
 
 	100%{
-		transform: translateY(270px);			
+		transform: translateY(207px);			
 	}
 }
+*/
+
+@keyframes bouge_bille{
+	0%{
+		top:0;
+	}
+	30%{
+		top:90%;
+	}
+	45%{
+		top:50%;
+	}
+	60%{
+		top:90%;
+	}
+	80%{
+		top:75.5%;
+	}
+	100%{
+		top:90%;
+	}	
+}
+
 
 #bordure{
 	border: solid black 1px;
 	height: 300px;
 	width: 30px;
+	/* dans le cas du top */
+	position: relative;
 }
 
 
@@ -136,5 +162,7 @@
 	animation-duration: 5s;
 	/* l'animation ne s'arrête pas */
 	animation-iteration-count: infinite;
+	/* dans le cas du top */
+	position: absolute;
 }
 
