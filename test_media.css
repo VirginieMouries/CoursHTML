@@ -1,0 +1,59 @@
+body, html{
+	width: 98vw;
+}
+
+.wrapper{
+	/* flex pour la page: afficher en lignes */
+	display: flex;
+	flex-direction: rows;	
+	/*height: 100vh; /* pour que ca prenne tout l'écran en hauteur*/
+
+}
+
+
+#col1{
+	background-color: red;
+	padding: 5px 5px 5px 5px;
+	margin: 2px;
+
+}
+
+#col2{
+	background-color: blue;
+	padding: 5px 5px 5px 5px;
+	margin: 2px;
+}
+
+#entete{
+	display: none;
+	background-color: yellow;
+}
+
+#pied{
+	display: none;
+	background-color: green;	
+}
+
+@media (max-width: 640px){
+	.wrapper{
+		flex-direction: column;	
+	}
+}
+
+@media (min-width:800px){
+	#entete{
+	display: block;
+	height: 60px;
+	}
+}
+
+@media print {	
+	#pied{
+	display: block;
+	}
+
+}
+
+
+
+
